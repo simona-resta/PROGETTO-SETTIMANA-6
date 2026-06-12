@@ -23,3 +23,21 @@ body {
 
 
 // === Stili custom delle sezioni (header sticky, hero, servizi, contatti, footer) ===
+
+.main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: colors.$brand-dark;
+}
+
+.hero-section {
+  min-height: 80vh;
+  background-color: colors.$brand-primary;
+  padding: 4rem 1rem;
+
+  h1 {
+    font-size: font.$hero-title;
+    line-height: 1.1;
+  }
+}
