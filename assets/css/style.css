@@ -2,6 +2,23 @@ body {
   font-size: 16px;
 }
 
+.btn-primary {
+  background-color: hsl(20, 30%, 35%);
+  border-color: hsl(20, 30%, 35%);
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: hsl(20, 30%, 27%);
+  border-color: hsl(20, 30%, 27%);
+}
+
+.text-primary {
+  color: hsl(20, 30%, 35%) !important;
+}
+
+.bg-primary {
+  background-color: hsl(20, 30%, 35%) !important;
+}
+
 .main-nav {
   position: sticky;
   top: 0;

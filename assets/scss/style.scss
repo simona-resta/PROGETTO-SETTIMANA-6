@@ -20,7 +20,24 @@ body {
 
 // === Override Bootstrap (sovrascrivi .btn-primary, .bg-primary, .text-primary col tuo colore brand) ===
 
+.btn-primary {
+  background-color: colors.$brand-primary;
+  border-color: colors.$brand-primary;
 
+  &:hover,
+  &:focus {
+    background-color: darken(colors.$brand-primary, 8%);
+    border-color: darken(colors.$brand-primary, 8%);
+  }
+}
+
+.text-primary {
+  color: colors.$brand-primary !important;
+}
+
+.bg-primary {
+  background-color: colors.$brand-primary !important;
+}
 
 // === Stili custom delle sezioni (header sticky, hero, servizi, contatti, footer) ===
 
