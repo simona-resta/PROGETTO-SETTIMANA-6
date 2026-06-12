@@ -57,4 +57,45 @@ body {
   color: hsl(40, 30%, 90%) !important;
 }
 
+body.dark-theme {
+  background-color: hsl(20, 15%, 12%);
+  color: hsl(40, 30%, 90%);
+}
+body.dark-theme h1, body.dark-theme h2, body.dark-theme h3, body.dark-theme h4, body.dark-theme h5, body.dark-theme h6 {
+  color: #fff;
+}
+body.dark-theme .bg-light {
+  background-color: hsl(20, 15%, 15%) !important;
+  color: hsl(40, 30%, 90%);
+}
+body.dark-theme .text-muted {
+  color: hsl(20, 10%, 65%) !important;
+}
+body.dark-theme .service-card {
+  background-color: hsl(20, 15%, 18%);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+body.dark-theme .service-card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+body.dark-theme .form-control, body.dark-theme .form-select {
+  background-color: hsl(20, 15%, 18%);
+  border-color: hsl(20, 15%, 25%);
+  color: #fff;
+}
+body.dark-theme .form-control:focus, body.dark-theme .form-select:focus {
+  background-color: hsl(20, 15%, 22%);
+  color: #fff;
+  border-color: hsl(20, 30%, 35%);
+  box-shadow: 0 0 0 0.25rem rgba(116.025, 80.325, 62.475, 0.25);
+}
+body.dark-theme .form-label {
+  color: hsl(40, 30%, 90%);
+}
+body.dark-theme #theme-toggle-mobile:focus, body.dark-theme #theme-toggle-desktop:focus {
+  box-shadow: none;
+  color: hsl(40, 30%, 90%) !important;
+}
+
 /*# sourceMappingURL=style.css.map */

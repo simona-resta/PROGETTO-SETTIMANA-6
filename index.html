@@ -14,20 +14,31 @@
       <!-- Navbar Bootstrap (navbar-expand-md, sticky in cima) -->
        <nav class="navbar navbar-expand-md navbar-dark main-nav">
         <div class="container">
-          <a class="navbar-brand fw-bold" href="#studio">Atelier</a>
-          <button class="navbar-toggler" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#nav-menu"
-                  aria-controls="nav-menu" aria-expanded="false"
-                  aria-label="Apri menu">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="nav-menu">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="#studio">Studio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
-            </ul>
-          </div>
+            <a class="navbar-brand fw-bold" href="#studio">Atelier</a>
+            <button id="theme-toggle-mobile" class="btn text-white ms-auto me-2 d-md-none p-1" type="button" aria-label="Cambia tema">
+                <i class="bi bi-moon-fill fs-5"></i>
+            </button>
+            
+            <button class="navbar-toggler" type="button"
+               data-bs-toggle="collapse" data-bs-target="#nav-menu"
+               aria-controls="nav-menu" aria-expanded="false"
+               aria-label="Apri menu">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav ms-auto align-items-md-center">
+                    <li class="nav-item"><a class="nav-link" href="#studio">Studio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+                    
+                    <li class="nav-item d-none d-md-block ms-2">
+                        <button id="theme-toggle-desktop" class="btn text-white p-1" type="button" aria-label="Cambia tema">
+                            <i class="bi bi-moon-fill fs-5"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
       </nav>
     </header>
