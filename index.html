@@ -83,12 +83,72 @@
         </div>
     </section>
 
-    <section id="contatti">
+    <section id="contatti" class="py-5 bg-light">
       <!-- Form contatti Bootstrap, larghezza limitata e centrata -->
+       <div class="container">
+        <h2 class="fs-2 fw-bold mb-2 text-center">Contattaci</h2>
+        <p class="text-muted text-center mb-4">Compila il form, ti rispondiamo entro 48 ore.</p>
+
+        <div class="col-12 col-md-8 col-lg-6 mx-auto">
+          <form>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="tipo" class="form-label">Tipo di progetto</label>
+              <select class="form-select" id="tipo" name="tipo">
+                <option value="residenziale">Residenziale</option>
+                <option value="interior">Interior design</option>
+                <option value="ristrutturazione">Ristrutturazione</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="messaggio" class="form-label">Messaggio</label>
+              <textarea class="form-control" id="messaggio" name="messaggio" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Invia</button>
+          </form>
+        </div>
+      </div>
     </section>
 
-    <footer>
+    <footer class="text-white py-5 main-footer">
       <!-- 3 colonne: Atelier+indirizzo / Link / Contatti. Copyright in fondo -->
+       <div class="container">
+        <div class="row">
+            
+            <div class="col-12 col-md-4 mb-3">
+                <h3 class="fs-5 fw-bold">Atelier</h3>
+                <p class="m-0">Studio di architettura</p>
+                <p class="m-0">Via dei Pioppi 12, Milano</p>
+            </div>
+            
+            <div class="col-12 col-md-4 mb-3">
+                <h3 class="fs-5 fw-bold">Link</h3>
+                <p class="m-0"><a href="#studio" class="text-white text-decoration-none">Studio</a></p>
+                <p class="m-0"><a href="#servizi" class="text-white text-decoration-none">Servizi</a></p>
+                <p class="m-0"><a href="#contatti" class="text-white text-decoration-none">Contatti</a></p>
+            </div>
+            
+            <div class="col-12 col-md-4 mb-3">
+                <h3 class="fs-5 fw-bold">Contatti</h3>
+                <p class="m-0">info@atelier.example</p>
+                <p class="m-0">+39 02 0000 1111</p>
+            </div>
+
+        </div>
+        <hr class="border-light">
+        <p class="text-center m-0">© 2026 Atelier — tutti i diritti riservati</p>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -50,4 +50,11 @@ body {
   background-color: white;
 }
 
+.main-footer {
+  background-color: hsl(20, 20%, 15%);
+}
+.main-footer a:hover {
+  color: hsl(40, 30%, 90%) !important;
+}
+
 /*# sourceMappingURL=style.css.map */

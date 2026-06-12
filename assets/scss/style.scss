@@ -74,3 +74,11 @@ body {
   @include card-elevata;
   background-color: white;
 }
+
+.main-footer {
+  background-color: colors.$brand-dark;
+
+  a:hover {
+    color: colors.$brand-secondary !important;
+  }
+}
