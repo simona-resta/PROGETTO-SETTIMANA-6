@@ -52,12 +52,6 @@ body {
 
 // === Stili custom delle sezioni (header sticky, hero, servizi, contatti, footer) ===
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1020;
-}
-
 .main-nav {
   position: sticky;
   top: 0;
@@ -81,10 +75,34 @@ header {
   background-color: white;
 }
 
-.lavoro-card {
+.project-card {
   @include card-elevata;
   background-color: white;
-  cursor: pointer;
+  overflow: hidden;
+
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .badge {
+    background-color: colors.$brand-secondary;
+    color: colors.$brand-primary;
+    font-weight: 600;
+  }
+}
+
+.btn-filter {
+  border: 1px solid colors.$brand-primary;
+  color: colors.$brand-primary;
+  background-color: transparent;
+  transition: all 200ms ease;
+
+  &:hover, &.active {
+    background-color: colors.$brand-primary;
+    color: white;
+    border-color: colors.$brand-primary;
+  }
 }
 
 .main-footer {
@@ -122,17 +140,33 @@ body.dark-theme {
     }
   }
 
-  .lavoro-card {
+  .project-card {
     background-color: hsl(20, 15%, 18%);
     color: #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+    .badge {
+      background-color: colors.$brand-primary;
+      color: #fff;
+    }
 
     &:hover {
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
     }
   }
 
-  .form-control, .form-select, .modal-content {
+  .btn-filter {
+    border-color: colors.$brand-secondary;
+    color: colors.$brand-secondary;
+
+    &:hover, &.active {
+      background-color: colors.$brand-secondary;
+      color: colors.$brand-dark;
+      border-color: colors.$brand-secondary;
+    }
+  }
+
+  .form-control, .form-select {
     background-color: hsl(20, 15%, 18%);
     border-color: hsl(20, 15%, 25%);
     color: #fff;
@@ -143,14 +177,6 @@ body.dark-theme {
       border-color: colors.$brand-primary;
       box-shadow: 0 0 0 0.25rem rgba(colors.$brand-primary, 0.25);
     }
-  }
-
-  .modal-header {
-    border-bottom: 1px solid hsl(20, 15%, 25%);
-  }
-
-  .btn-close {
-    filter: invert(1);
   }
 
   .form-label {

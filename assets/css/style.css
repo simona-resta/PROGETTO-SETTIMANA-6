@@ -19,12 +19,6 @@ body {
   background-color: hsl(20, 30%, 35%) !important;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1020;
-}
-
 .main-nav {
   position: sticky;
   top: 0;
@@ -56,19 +50,40 @@ header {
   background-color: white;
 }
 
-.lavoro-card {
+.project-card {
   border: none;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: box-shadow 200ms ease, transform 200ms ease;
 }
-.lavoro-card:hover {
+.project-card:hover {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
   transform: translateY(-4px);
 }
-.lavoro-card {
+.project-card {
   background-color: white;
-  cursor: pointer;
+  overflow: hidden;
+}
+.project-card .card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+.project-card .badge {
+  background-color: hsl(40, 30%, 90%);
+  color: hsl(20, 30%, 35%);
+  font-weight: 600;
+}
+
+.btn-filter {
+  border: 1px solid hsl(20, 30%, 35%);
+  color: hsl(20, 30%, 35%);
+  background-color: transparent;
+  transition: all 200ms ease;
+}
+.btn-filter:hover, .btn-filter.active {
+  background-color: hsl(20, 30%, 35%);
+  color: white;
+  border-color: hsl(20, 30%, 35%);
 }
 
 .main-footer {
@@ -100,30 +115,37 @@ body.dark-theme .service-card {
 body.dark-theme .service-card:hover {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
-body.dark-theme .lavoro-card {
+body.dark-theme .project-card {
   background-color: hsl(20, 15%, 18%);
   color: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
-body.dark-theme .lavoro-card:hover {
+body.dark-theme .project-card .badge {
+  background-color: hsl(20, 30%, 35%);
+  color: #fff;
+}
+body.dark-theme .project-card:hover {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
-body.dark-theme .form-control, body.dark-theme .form-select, body.dark-theme .modal-content {
+body.dark-theme .btn-filter {
+  border-color: hsl(40, 30%, 90%);
+  color: hsl(40, 30%, 90%);
+}
+body.dark-theme .btn-filter:hover, body.dark-theme .btn-filter.active {
+  background-color: hsl(40, 30%, 90%);
+  color: hsl(20, 20%, 15%);
+  border-color: hsl(40, 30%, 90%);
+}
+body.dark-theme .form-control, body.dark-theme .form-select {
   background-color: hsl(20, 15%, 18%);
   border-color: hsl(20, 15%, 25%);
   color: #fff;
 }
-body.dark-theme .form-control:focus, body.dark-theme .form-select:focus, body.dark-theme .modal-content:focus {
+body.dark-theme .form-control:focus, body.dark-theme .form-select:focus {
   background-color: hsl(20, 15%, 22%);
   color: #fff;
   border-color: hsl(20, 30%, 35%);
   box-shadow: 0 0 0 0.25rem rgba(116.025, 80.325, 62.475, 0.25);
-}
-body.dark-theme .modal-header {
-  border-bottom: 1px solid hsl(20, 15%, 25%);
-}
-body.dark-theme .btn-close {
-  filter: invert(1);
 }
 body.dark-theme .form-label {
   color: hsl(40, 30%, 90%);
