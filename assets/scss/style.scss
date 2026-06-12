@@ -16,6 +16,17 @@ body {
 
 // === Mixin (definisci almeno @mixin card-elevata o equivalente) ===
 
+@mixin card-elevata {
+  border: none;
+  border-radius: box.$radius-base;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 200ms ease, transform 200ms ease;
+
+  &:hover {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+  }
+}
 
 
 // === Override Bootstrap (sovrascrivi .btn-primary, .bg-primary, .text-primary col tuo colore brand) ===
@@ -57,4 +68,9 @@ body {
     font-size: font.$hero-title;
     line-height: 1.1;
   }
+}
+
+.service-card {
+  @include card-elevata;
+  background-color: white;
 }

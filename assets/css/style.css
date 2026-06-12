@@ -36,4 +36,18 @@ body {
   line-height: 1.1;
 }
 
+.service-card {
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 200ms ease, transform 200ms ease;
+}
+.service-card:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+.service-card {
+  background-color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
